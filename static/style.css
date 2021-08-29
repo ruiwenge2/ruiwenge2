@@ -46,14 +46,13 @@ p {
 	background: white;
 	outline: none;
 	border:2px solid blue;
-	transition: all 0.5s ease-in-out;
 }
 #homebtn {
 	margin-left:30%;
 }
 .button:hover{
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
+	transition: 0.5s;
 	color: white;
 	background: blue;
 }
