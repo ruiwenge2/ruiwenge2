@@ -1,3 +1,4 @@
+import json
 from flask import Flask, render_template
 app = Flask("app")
 
@@ -8,11 +9,15 @@ def home():
 
 @app.route("/projects")
 def projects():
-  return render_template("projects.html")
+  projects = json.loads(open("projects.json").read())
+  return render_template("projects.html", projects=projects)
 
 @app.route("/python")
 def python():
-  return render_template("pyprojects.html")
+  pyprojects = json.loads(open("pyprojects.json").read())
+  pywebsites = json.loads(open("pywebsites.json").read())
+  nodewebsites = json.loads(open("nodewebsites.json").read())
+  return render_template("pyprojects.html", pyprojects=pyprojects, pywebsites=pywebsites, nodewebsites=nodewebsites)
 
 @app.route("/thanks")
 def thanks():
