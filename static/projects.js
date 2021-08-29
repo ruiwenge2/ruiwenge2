@@ -38,7 +38,7 @@ function bindItem(item) {
 
   /* Injecting data into the template of our card */
   const card = `
-  <img src='${item.image}' draggable="false">
+  <img src='${item.image.startsWith("https://") ? item.image: "https://projects.ruiwenge2.repl.co" + item.image}' draggable="false">
   <h3 class="h3">${item.name}</h3>
   <h3><a href="${item.link.startsWith("https://") ? item.link: "https://projects.ruiwenge2.repl.co" + item.link}" target="_blank">Open</a></h3>`;
     
