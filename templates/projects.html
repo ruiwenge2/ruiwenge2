@@ -81,8 +81,6 @@
         {% for i in projects %}<div>{% if "https://" in i.image %}<img src="{{i.image}}" draggable="false">{% else %}<img src="{{'https://projects.ruiwenge2.repl.co' + i.image}}" draggable="false">{% endif %}<h3 class="h3">{{i.name}}</h3><h3>{% if "https://" in i.link %}<a href="{{i.link}}" target="_blank">Open</a>{% else %}<a href="{{'https://projects.ruiwenge2.repl.co' + i.link}}" target="_blank">Open</a>{% endif %}</h3></div>{% endfor %}
 			</main>
 		</div>
-		<script src="/static/modal.js"></script>
     <script src="/static/script.js"></script>
-		<!-- <script type="module" src="/static/projects.js"></script> -->
 	</body>
 </html>
