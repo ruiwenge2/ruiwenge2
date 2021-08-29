@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import os
 app = Flask("app")
 
 @app.route("/")
@@ -24,6 +23,6 @@ def thanks():
 
 @app.errorhandler(404)
 def page_not_found(e):
-  return render_template("404.html")
+  return render_template("404.html"), 404
 
 app.run(host='0.0.0.0', port=8080)
