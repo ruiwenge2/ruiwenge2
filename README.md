@@ -1,10 +1,10 @@
 # Hi!
 
-I'm currently working on a multiplayer website version of my battle game: 
+I'm currently working on a multiplayer game: 
 
-https://github.com/ruiwenge2/MultiplayerBattleGame
+https://github.com/ruiwenge2/Game
 
-https://replit.com/@ruiwenge2/MultiplayerBattleGame
+https://replit.com/@ruiwenge2/Game
 
 ![profile views](https://komarev.com/ghpvc/?username=ruiwenge2&color=blue&type=.svg)
 
