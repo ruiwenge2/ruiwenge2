@@ -1,6 +1,6 @@
 # Hi!
 
-I'm currently working on a multiplayer game: 
+I'm currently working on a multiplayer game (I have no idea what to name it lol): 
 
 https://github.com/ruiwenge2/Game
 
