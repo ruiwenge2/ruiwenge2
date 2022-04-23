@@ -7,17 +7,18 @@ app = Flask("app")
 def home():
   return render_template("home.html")
 
+
 @app.route("/projects")
 def projects():
-  projects = json.loads(open("projects.json").read())
-  return render_template("projects.html", projects=projects)
+  projects = json.loads(open("json/pyprojects.json").read())
+  websites = json.loads(open("json/pywebsites.json").read())
+  nodewebsites = json.loads(open("json/nodewebsites.json").read())
+  return render_template("projects.html", projects=projects, websites=websites, nodewebsites=nodewebsites)
 
-@app.route("/python")
-def python():
-  pyprojects = json.loads(open("pyprojects.json").read())
-  pywebsites = json.loads(open("pywebsites.json").read())
-  nodewebsites = json.loads(open("nodewebsites.json").read())
-  return render_template("pyprojects.html", pyprojects=pyprojects, pywebsites=pywebsites, nodewebsites=nodewebsites)
+@app.route("/other")
+def other():
+  other = json.loads(open("json/other.json").read())
+  return render_template("other.html", other=other)
 
 @app.route("/thanks")
 def thanks():

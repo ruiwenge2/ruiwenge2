@@ -7,74 +7,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="icon" href="/static/home.png">
 		<link href="/static/style.css" rel="stylesheet">
-		<!-- The place to define mobile friendly styles -->
-    <style>
-    	@media only screen and (max-width: 760px) {
-    		nav {
-    			height: 100px;
-    		}
-    		#home {
-    			height: 110%;
-    		}
-    		main {
-    			margin: 20px 0;
-    			padding: 0;
-    		}
-    		main div {
-    			width: 90%;
-    			height: 300px;
-    		}
-    		main div img {
-    		  height: 60%;
-    		}
-    		.contain {
-          padding: 24px 48px;
-          border-radius: 16px;
-          background-color: white;
-          max-width: 760px;
-          /* margin-top: 10px; */
-    		}
-        .contain p {
-          font-size:15px;
-        }
-    		.button{
-	        	width: 20%;
-	        	height: 60px;
-	        	margin-top:15px;
-	        	margin-right:1%;
-	        	border-radius: 10px;
-	        	font-size: 1em;
-	        	color: blue;
-	        	background: white;
-	        	outline: none;
-        	}
-        	#homebtn {
-        		margin-left:20%;
-        	}
-		    .button:hover{
-		    	cursor: pointer;
-		    	transition: all 0.5s ease-in-out;
-		    	color: white;
-		    	background: blue;
-		    }
-    		#name {
-    		  margin-top:80px;
-    		}
-    	}
-    	
-    </style>
 	</head>
 	<body>
-		<nav>  <!--buttons-->
-			<button id="homebtn" onclick="location.href = '/home'" class="button">Home</button>
-			<button id="projectsbtn" onclick="location.href = '/projects'" class="button">Projects</button>
-			<button id="pythonbtn" onclick="location.href = '/python'" class="button">Python</button>
-		</nav>
+		{% include nav.html %}
 		<!--homepage-->
 		<div id="home" class="part">
 		<h1 id="name" style="margin-top: 100px;" class="h1">My Homepage</h1>
-		<h3>Go to Projects to see my projects!</h3>
-		<h3>Or go to Python to see my Python projects!</h3><br><br>
+		<h3>Go to Projects to see my projects, or go to Python to see my Python projects!</h3><br><br>
 		<div class="contain">
 			<p>In the Projects page, there are games, useful sites, and sites you can play with when you are bored.<br>
 			In the Python page, there are mostly games and also some useful things. They are created with Python. There are also some websites I created with Python. Even though the page is about Python, you can also find websites that I created with Node.js.</p>
