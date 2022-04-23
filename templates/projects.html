@@ -9,7 +9,11 @@
 		<link href="/static/style.css" rel="stylesheet">
 	</head>
 	<body>
-		{% include nav.html %}
+		<nav>  <!--buttons-->
+      <button id="homebtn" onclick="location.href = '/home'" class="button">Home</button>
+      <button id="projectsbtn" onclick="location.href = '/projects'" class="button">Projects</button>
+      <button id="pythonbtn" onclick="location.href = '/other'" class="button">Other</button>
+    </nav>
 		<div id="pyprojects" class="part">
 			<main style="margin-top: 100px;" id="main">
 				<h1 style="font-size:30px" class="h1">Enjoy the websites/games!</h1><p></p><h1>Here are some websites/games I made with Node.js:</h1>{% for i in nodewebsites %}<p><a href="{{nodewebsites[i]}}" target="_blank">{{i}}</a></p>{% endfor %}<h1>Below are some websites I made with Python:</h1>{% for i in websites %}<p><a href="{{websites[i]}}" target="_blank">{{i}}</a></p>{% endfor %}<h1>And here are some other projects made with Python:</h1>{% for i in projects %}<p><a href="{{projects[i]}}" target="_blank">{{i}}</a></p>{% endfor %}

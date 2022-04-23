@@ -9,7 +9,11 @@
 		<link href="/static/style.css" rel="stylesheet">
 	</head>
 	<body>
-		{% include nav.html %}
+		<nav>  <!--buttons-->
+      <button id="homebtn" onclick="location.href = '/home'" class="button">Home</button>
+      <button id="projectsbtn" onclick="location.href = '/projects'" class="button">Projects</button>
+      <button id="pythonbtn" onclick="location.href = '/other'" class="button">Other</button>
+    </nav>
 		<!--homepage-->
 		<div id="home" class="part">
 		<h1 id="name" style="margin-top: 100px;" class="h1">My Homepage</h1>
